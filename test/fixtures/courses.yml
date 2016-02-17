@@ -1,0 +1,19 @@
+# Read about fixtures at http://api.rubyonrails.org/classes/ActiveRecord/FixtureSet.html
+
+one:
+  couse_number: 1
+  title: MyString
+  description: MyText
+  instructor: MyString
+  start_date: 2016-02-17
+  end_date: 2016-02-17
+  status: false
+
+two:
+  couse_number: 1
+  title: MyString
+  description: MyText
+  instructor: MyString
+  start_date: 2016-02-17
+  end_date: 2016-02-17
+  status: false
