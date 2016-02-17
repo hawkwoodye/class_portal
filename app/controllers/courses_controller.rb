@@ -60,6 +60,10 @@ class CoursesController < ApplicationController
       format.json { head :no_content }
     end
   end
+  def course_params
+      params.require(:course).permit(:couse_number, :title, :description, :instructor, :start_date, :end_date, :status, :admin_id)
+
+  end
 
   private
     # Use callbacks to share common setup or constraints between actions.
@@ -68,7 +72,4 @@ class CoursesController < ApplicationController
     end
 
     # Never trust parameters from the scary internet, only allow the white list through.
-    def course_params
-      params.require(:course).permit(:couse_number, :title, :description, :instructor, :start_date, :end_date, :status)
-    end
 end

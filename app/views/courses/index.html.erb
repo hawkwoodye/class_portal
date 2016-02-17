@@ -5,6 +5,7 @@
 <table>
   <thead>
     <tr>
+      <th>Admin name</th>
       <th>Couse number</th>
       <th>Title</th>
       <th>Description</th>
@@ -18,7 +19,9 @@
 
   <tbody>
     <% @courses.each do |course| %>
+    <div class="course">
       <tr>
+      <strong><%= course.admin.name %></strong>
         <td><%= course.couse_number %></td>
         <td><%= course.title %></td>
         <td><%= course.description %></td>
@@ -26,10 +29,13 @@
         <td><%= course.start_date %></td>
         <td><%= course.end_date %></td>
         <td><%= course.status %></td>
-        <td><%= link_to 'Show', course %></td>
-        <td><%= link_to 'Edit', edit_course_path(course) %></td>
-        <td><%= link_to 'Destroy', course, method: :delete, data: { confirm: 'Are you sure?' } %></td>
+	<span class="admin">
+            <td><%= link_to 'Show', course %></td>
+            <td><%= link_to 'Edit', edit_course_path(course) %></td>
+            <td><%= link_to 'Destroy', course, method: :delete, data: { confirm: 'Are you sure?' } %></td>
+	</span>
       </tr>
+    </div>
     <% end %>
   </tbody>
 </table>

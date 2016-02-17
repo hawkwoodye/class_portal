@@ -8,6 +8,7 @@ class CreateCourses < ActiveRecord::Migration
       t.date :start_date
       t.date :end_date
       t.boolean :status
+      t.belongs_to :admin
 
       t.timestamps null: false
     end
