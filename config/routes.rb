@@ -1,15 +1,23 @@
 Rails.application.routes.draw do
+  get 'welcome/index'
+
   devise_for :students
   devise_for :instructors
   devise_for :admins
   resources :courses
-  root to: "courses#index"
+  resources :admins
+  resources :students
+  resources :instructors
+  root to: "welcome#index"
   # The priority is based upon order of creation: first created -> highest priority.
   # See how all your routes lay out with "rake routes".
 
   # You can have the root of your site routed with "root"
   # root 'welcome#index'
 
+  get 'admins/index' => 'admins#index'
+  get 'instructors/index' => 'instructors#index'
+  get 'students/index' => 'students#index'
   # Example of regular route:
   #   get 'products/:id' => 'catalog#view'
 

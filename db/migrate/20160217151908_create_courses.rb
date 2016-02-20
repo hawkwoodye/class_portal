@@ -13,4 +13,8 @@ class CreateCourses < ActiveRecord::Migration
       t.timestamps null: false
     end
   end
+
+  def down
+    delete_table :courses
+  end
 end

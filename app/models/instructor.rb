@@ -4,5 +4,5 @@ class Instructor < ActiveRecord::Base
   devise :database_authenticatable, :registerable,
          :recoverable, :rememberable, :trackable, :validatable
   has_many :students
-  has_one :courses
+  has_many :courses
 end

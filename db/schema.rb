@@ -11,7 +11,7 @@
 #
 # It's strongly recommended that you check this file into your version control system.
 
-ActiveRecord::Schema.define(version: 20160217185821) do
+ActiveRecord::Schema.define(version: 20160219163210) do
 
   create_table "admins", force: :cascade do |t|
     t.string   "name"
@@ -65,6 +65,14 @@ ActiveRecord::Schema.define(version: 20160217185821) do
 
   add_index "instructors", ["email"], name: "index_instructors_on_email", unique: true
   add_index "instructors", ["reset_password_token"], name: "index_instructors_on_reset_password_token", unique: true
+
+  create_table "profiles", force: :cascade do |t|
+    t.string   "name"
+    t.string   "email"
+    t.integer  "age"
+    t.datetime "created_at", null: false
+    t.datetime "updated_at", null: false
+  end
 
   create_table "students", force: :cascade do |t|
     t.string   "name"
