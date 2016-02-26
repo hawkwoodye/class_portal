@@ -1,0 +1,15 @@
+<h1>Students#signup</h1>
+<p>Welcome to Student Signup Page!</p>
+
+<%= form_tag :action => 'new' do %>
+      <%= label_tag :name %>
+      <%= text_field_tag 'student', 'name' %>
+      
+      <%= label_tag :email %>
+      <%= email_field 'student', 'email' %>
+
+      <%= label_tag :encrypted_password %>
+      <%= password_field 'student','encrypted_password' %>
+
+      <%= submit_tag "Sign up", class: "btn btn-primary" %>
+<% end %>
