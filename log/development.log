@@ -1729,3 +1729,367 @@ Processing by UsersController#show as HTML
   Rendered layouts/_header.html.erb (5.4ms)
   Rendered layouts/_footer.html.erb (0.4ms)
 Completed 200 OK in 217ms (Views: 210.2ms | ActiveRecord: 0.9ms)
+
+
+Started GET "/" for 152.7.224.8 at 2016-02-26 21:08:29 -0500
+  [1m[36mActiveRecord::SchemaMigration Load (0.4ms)[0m  [1mSELECT "schema_migrations".* FROM "schema_migrations"[0m
+Processing by StaticPagesController#home as HTML
+  Rendered static_pages/home.html.erb within layouts/application (3.5ms)
+  [1m[35mUser Load (0.4ms)[0m  SELECT  "users".* FROM "users" WHERE "users"."id" = ? LIMIT 1  [["id", 4]]
+  Rendered layouts/_header.html.erb (110.1ms)
+  Rendered layouts/_footer.html.erb (2.1ms)
+Completed 200 OK in 923ms (Views: 904.0ms | ActiveRecord: 1.3ms)
+
+
+Started GET "/" for 152.7.224.8 at 2016-02-26 21:08:30 -0500
+Processing by StaticPagesController#home as HTML
+  Rendered static_pages/home.html.erb within layouts/application (2.0ms)
+  [1m[36mUser Load (0.2ms)[0m  [1mSELECT  "users".* FROM "users" WHERE "users"."id" = ? LIMIT 1[0m  [["id", 4]]
+  Rendered layouts/_header.html.erb (4.3ms)
+  Rendered layouts/_footer.html.erb (0.4ms)
+Completed 200 OK in 248ms (Views: 246.6ms | ActiveRecord: 0.2ms)
+
+
+Started DELETE "/logout" for 152.7.224.8 at 2016-02-26 21:08:38 -0500
+Processing by SessionsController#destroy as HTML
+  Parameters: {"authenticity_token"=>"rUkOOVj18Uysv6iz8NIHBf6d5RH86mVUfaESGZ5WHygN5/euc72rN69bpXrkc3Pj1nvn/KJfW0vRKM+Wv2tGoQ=="}
+Redirected to http://98.26.8.120:434/
+Completed 302 Found in 4ms (ActiveRecord: 0.0ms)
+
+
+Started GET "/" for 152.7.224.8 at 2016-02-26 21:08:38 -0500
+Processing by StaticPagesController#home as HTML
+  Rendered static_pages/home.html.erb within layouts/application (0.9ms)
+  [1m[35mUser Load (0.4ms)[0m  SELECT  "users".* FROM "users" WHERE "users"."id" IS NULL LIMIT 1
+  Rendered layouts/_header.html.erb (3.2ms)
+  Rendered layouts/_footer.html.erb (0.5ms)
+Completed 200 OK in 248ms (Views: 245.8ms | ActiveRecord: 0.4ms)
+
+
+Started GET "/login" for 152.7.224.8 at 2016-02-26 21:08:41 -0500
+Processing by SessionsController#new as HTML
+  Rendered sessions/new.html.erb within layouts/application (63.5ms)
+  [1m[36mUser Load (0.4ms)[0m  [1mSELECT  "users".* FROM "users" WHERE "users"."id" IS NULL LIMIT 1[0m
+  Rendered layouts/_header.html.erb (6.0ms)
+  Rendered layouts/_footer.html.erb (1.4ms)
+Completed 200 OK in 292ms (Views: 290.5ms | ActiveRecord: 0.4ms)
+
+
+Started POST "/login" for 152.7.224.8 at 2016-02-26 21:09:01 -0500
+Processing by SessionsController#create as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"kb9P4dBq+4/DB46AUxvNZOJ2DPJCzbGcXRYWEl+/J1sxEbZ2+yKh9MDjg0lHurmCypAOHxx4j4Pxn8udfoJ+0g==", "session"=>{"email"=>"11@11.com", "password"=>"[FILTERED]"}, "commit"=>"Log in"}
+  [1m[35mUser Load (0.6ms)[0m  SELECT  "users".* FROM "users" WHERE "users"."email" = ? LIMIT 1  [["email", "11@11.com"]]
+Redirected to http://98.26.8.120:434/users/4
+Completed 302 Found in 164ms (ActiveRecord: 0.6ms)
+
+
+Started GET "/users/4" for 152.7.224.8 at 2016-02-26 21:09:01 -0500
+Processing by UsersController#show as HTML
+  Parameters: {"id"=>"4"}
+  [1m[36mUser Load (0.3ms)[0m  [1mSELECT  "users".* FROM "users" WHERE "users"."id" = ? LIMIT 1[0m  [["id", 4]]
+  [1m[35mCACHE (0.1ms)[0m  SELECT  "users".* FROM "users" WHERE "users"."id" = ? LIMIT 1  [["id", "4"]]
+  Rendered users/show.html.erb within layouts/application (4.5ms)
+  [1m[36mUser Load (0.3ms)[0m  [1mSELECT  "users".* FROM "users" WHERE "users"."id" = ? LIMIT 1[0m  [["id", 4]]
+  Rendered layouts/_header.html.erb (5.4ms)
+  Rendered layouts/_footer.html.erb (0.5ms)
+Completed 200 OK in 236ms (Views: 228.3ms | ActiveRecord: 0.7ms)
+
+
+Started DELETE "/logout" for 152.7.224.8 at 2016-02-26 21:09:05 -0500
+Processing by SessionsController#destroy as HTML
+  Parameters: {"authenticity_token"=>"kmO4WtHklX22jv2WI9ROtYhMICEgVRVs+9Pfa57LeokyzUHN+qzPBrVq8F83dTpToKoizH7gK3NXWgLkv/YjAA=="}
+Redirected to http://98.26.8.120:434/
+Completed 302 Found in 3ms (ActiveRecord: 0.0ms)
+
+
+Started GET "/" for 152.7.224.8 at 2016-02-26 21:09:05 -0500
+Processing by StaticPagesController#home as HTML
+  Rendered static_pages/home.html.erb within layouts/application (0.9ms)
+  [1m[35mUser Load (0.4ms)[0m  SELECT  "users".* FROM "users" WHERE "users"."id" IS NULL LIMIT 1
+  Rendered layouts/_header.html.erb (2.7ms)
+  Rendered layouts/_footer.html.erb (0.5ms)
+Completed 200 OK in 212ms (Views: 210.1ms | ActiveRecord: 0.4ms)
+
+
+Started GET "/" for 152.7.224.8 at 2016-02-26 21:09:50 -0500
+  [1m[36mActiveRecord::SchemaMigration Load (0.3ms)[0m  [1mSELECT "schema_migrations".* FROM "schema_migrations"[0m
+Processing by StaticPagesController#home as HTML
+  Rendered static_pages/home.html.erb within layouts/application (3.4ms)
+  [1m[35mUser Load (1.3ms)[0m  SELECT  "users".* FROM "users" WHERE "users"."id" IS NULL LIMIT 1
+  Rendered layouts/_header.html.erb (46.1ms)
+  Rendered layouts/_footer.html.erb (2.0ms)
+Completed 200 OK in 900ms (Views: 881.0ms | ActiveRecord: 1.5ms)
+
+
+Started GET "/" for 152.7.224.8 at 2016-02-26 21:09:51 -0500
+Processing by StaticPagesController#home as HTML
+  Rendered static_pages/home.html.erb within layouts/application (0.5ms)
+  [1m[36mUser Load (0.3ms)[0m  [1mSELECT  "users".* FROM "users" WHERE "users"."id" IS NULL LIMIT 1[0m
+  Rendered layouts/_header.html.erb (2.4ms)
+  Rendered layouts/_footer.html.erb (0.4ms)
+Completed 200 OK in 199ms (Views: 196.3ms | ActiveRecord: 0.3ms)
+
+
+Started GET "/" for 152.7.224.2 at 2016-02-26 21:26:10 -0500
+Processing by StaticPagesController#home as HTML
+  Rendered static_pages/home.html.erb within layouts/application (0.8ms)
+  [1m[35mUser Load (0.4ms)[0m  SELECT  "users".* FROM "users" WHERE "users"."id" IS NULL LIMIT 1
+  Rendered layouts/_header.html.erb (3.7ms)
+  Rendered layouts/_footer.html.erb (0.4ms)
+Completed 200 OK in 333ms (Views: 331.5ms | ActiveRecord: 0.4ms)
+
+
+Started GET "/assets/admins.self-e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855.css?body=1" for 152.7.224.2 at 2016-02-26 21:26:10 -0500
+
+
+Started GET "/assets/custom.self-b55d81cc4c34f255079e769180adf408a5d9144ece9a744535898307590300bb.css?body=1" for 152.7.224.2 at 2016-02-26 21:26:10 -0500
+
+
+Started GET "/assets/courses.self-e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855.css?body=1" for 152.7.224.2 at 2016-02-26 21:26:10 -0500
+
+
+Started GET "/assets/enrollments.self-e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855.css?body=1" for 152.7.224.2 at 2016-02-26 21:26:10 -0500
+
+
+Started GET "/assets/instructors.self-e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855.css?body=1" for 152.7.224.2 at 2016-02-26 21:26:10 -0500
+
+
+Started GET "/assets/scaffolds.self-374417ae0ad985de8c47b3ad2e149c4ab5f5a825076384bc99dfff3f3d6c88ba.css?body=1" for 152.7.224.2 at 2016-02-26 21:26:10 -0500
+
+
+Started GET "/assets/materials.self-e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855.css?body=1" for 152.7.224.2 at 2016-02-26 21:26:10 -0500
+
+
+Started GET "/assets/sessions.self-e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855.css?body=1" for 152.7.224.2 at 2016-02-26 21:26:10 -0500
+
+
+Started GET "/assets/static_pages.self-e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855.css?body=1" for 152.7.224.2 at 2016-02-26 21:26:10 -0500
+
+
+Started GET "/assets/students.self-e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855.css?body=1" for 152.7.224.2 at 2016-02-26 21:26:10 -0500
+
+
+Started GET "/assets/users.self-e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855.css?body=1" for 152.7.224.2 at 2016-02-26 21:26:11 -0500
+
+
+Started GET "/assets/jquery.self-d03a5518f45df77341bdbe6201ba3bfa547ebba8ed64f0ea56bfa5f96ea7c074.js?body=1" for 152.7.224.2 at 2016-02-26 21:26:11 -0500
+
+
+Started GET "/assets/welcome.self-e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855.css?body=1" for 152.7.224.2 at 2016-02-26 21:26:11 -0500
+
+
+Started GET "/assets/application.self-e80e8f2318043e8af94dddc2adad5a4f09739a8ebb323b3ab31cd71d45fd9113.css?body=1" for 152.7.224.2 at 2016-02-26 21:26:11 -0500
+
+
+Started GET "/assets/jquery_ujs.self-8e98a7a072a6cee1372d19fff9ff3e6aa1e39a37d89d6f06861637d061113ee7.js?body=1" for 152.7.224.2 at 2016-02-26 21:26:11 -0500
+
+
+Started GET "/assets/turbolinks.self-c846e670826600e8c91b1a5ada3e6547110d996cd6ff24cde55024f7a135a1b4.js?body=1" for 152.7.224.2 at 2016-02-26 21:26:11 -0500
+
+
+Started GET "/assets/bootstrap.self-cdea7efeac1597b89ddd6fd86b0e8e0bec5d5fb1fac9c6e8a045f2c59eef2d13.js?body=1" for 152.7.224.2 at 2016-02-26 21:26:11 -0500
+
+
+Started GET "/assets/admins.self-877aef30ae1b040ab8a3aba4e3e309a11d7f2612f44dde450b5c157aa5f95c05.js?body=1" for 152.7.224.2 at 2016-02-26 21:26:11 -0500
+
+
+Started GET "/assets/courses.self-877aef30ae1b040ab8a3aba4e3e309a11d7f2612f44dde450b5c157aa5f95c05.js?body=1" for 152.7.224.2 at 2016-02-26 21:26:11 -0500
+
+
+Started GET "/assets/enrollments.self-877aef30ae1b040ab8a3aba4e3e309a11d7f2612f44dde450b5c157aa5f95c05.js?body=1" for 152.7.224.2 at 2016-02-26 21:26:11 -0500
+
+
+Started GET "/assets/instructors.self-877aef30ae1b040ab8a3aba4e3e309a11d7f2612f44dde450b5c157aa5f95c05.js?body=1" for 152.7.224.2 at 2016-02-26 21:26:11 -0500
+
+
+Started GET "/assets/materials.self-877aef30ae1b040ab8a3aba4e3e309a11d7f2612f44dde450b5c157aa5f95c05.js?body=1" for 152.7.224.2 at 2016-02-26 21:26:11 -0500
+
+
+Started GET "/assets/sessions.self-877aef30ae1b040ab8a3aba4e3e309a11d7f2612f44dde450b5c157aa5f95c05.js?body=1" for 152.7.224.2 at 2016-02-26 21:26:11 -0500
+
+
+Started GET "/assets/static_pages.self-877aef30ae1b040ab8a3aba4e3e309a11d7f2612f44dde450b5c157aa5f95c05.js?body=1" for 152.7.224.2 at 2016-02-26 21:26:11 -0500
+
+
+Started GET "/assets/students.self-877aef30ae1b040ab8a3aba4e3e309a11d7f2612f44dde450b5c157aa5f95c05.js?body=1" for 152.7.224.2 at 2016-02-26 21:26:11 -0500
+
+
+Started GET "/assets/users.self-877aef30ae1b040ab8a3aba4e3e309a11d7f2612f44dde450b5c157aa5f95c05.js?body=1" for 152.7.224.2 at 2016-02-26 21:26:11 -0500
+
+
+Started GET "/assets/welcome.self-877aef30ae1b040ab8a3aba4e3e309a11d7f2612f44dde450b5c157aa5f95c05.js?body=1" for 152.7.224.2 at 2016-02-26 21:26:11 -0500
+
+
+Started GET "/assets/application.self-f8806224e027f3e3f0138ea9ce99319e298dfdb323304d1f1be6eae8e8c74724.js?body=1" for 152.7.224.2 at 2016-02-26 21:26:11 -0500
+
+
+Started GET "/login" for 152.7.224.2 at 2016-02-26 21:26:14 -0500
+Processing by SessionsController#new as HTML
+  Rendered sessions/new.html.erb within layouts/application (61.5ms)
+  [1m[36mUser Load (0.3ms)[0m  [1mSELECT  "users".* FROM "users" WHERE "users"."id" IS NULL LIMIT 1[0m
+  Rendered layouts/_header.html.erb (4.7ms)
+  Rendered layouts/_footer.html.erb (1.1ms)
+Completed 200 OK in 250ms (Views: 247.8ms | ActiveRecord: 0.3ms)
+
+
+Started POST "/login" for 152.7.224.2 at 2016-02-26 21:26:21 -0500
+Processing by SessionsController#create as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"kvgRsiY/RXwx5iQFUi5+RoJl/a/aVB17MFbZvC1cRSU8d4uEMji4gG7bm50vAIe1prjZCD+081y4P1y8BTKSZA==", "session"=>{"email"=>"admin@example.com", "password"=>"[FILTERED]"}, "commit"=>"Log in"}
+  [1m[35mUser Load (0.6ms)[0m  SELECT  "users".* FROM "users" WHERE "users"."email" = ? LIMIT 1  [["email", "admin@example.com"]]
+Completed 500 Internal Server Error in 47ms (ActiveRecord: 1.4ms)
+
+BCrypt::Errors::InvalidHash (invalid hash):
+  app/controllers/sessions_controller.rb:6:in `create'
+
+
+  Rendered /home/yjin6/.rvm/gems/ruby-2.2.1/gems/web-console-2.0.0.beta3/lib/action_dispatch/templates/rescues/_source.erb (22.2ms)
+  Rendered /home/yjin6/.rvm/gems/ruby-2.2.1/gems/web-console-2.0.0.beta3/lib/action_dispatch/templates/rescues/_trace.html.erb (8.7ms)
+  Rendered /home/yjin6/.rvm/gems/ruby-2.2.1/gems/web-console-2.0.0.beta3/lib/action_dispatch/templates/rescues/_request_and_response.html.erb (2.5ms)
+  Rendered /home/yjin6/.rvm/gems/ruby-2.2.1/gems/web-console-2.0.0.beta3/lib/action_dispatch/templates/rescues/_web_console.html.erb (2.0ms)
+  Rendered /home/yjin6/.rvm/gems/ruby-2.2.1/gems/web-console-2.0.0.beta3/lib/action_dispatch/templates/rescues/diagnostics.html.erb within rescues/layout (78.3ms)
+  [1m[36m (0.2ms)[0m  [1mbegin transaction[0m
+  [1m[35mUser Exists (0.3ms)[0m  SELECT  1 AS one FROM "users" WHERE LOWER("users"."email") = LOWER('admin@example.com') LIMIT 1
+  [1m[36mSQL (1.3ms)[0m  [1mINSERT INTO "users" ("type", "name", "email", "password_digest", "created_at", "updated_at") VALUES (?, ?, ?, ?, ?, ?)[0m  [["type", "Admin"], ["name", "Super Admin"], ["email", "admin@example.com"], ["password_digest", "$2a$10$LmvAwpDahCP7fcdFBmpV2e92MWGFP4/K.O2IAqV78hN//WWqYcIXy"], ["created_at", "2016-02-27 02:31:40.741427"], ["updated_at", "2016-02-27 02:31:40.741427"]]
+  [1m[35m (82.4ms)[0m  commit transaction
+
+
+Started GET "/" for 152.7.224.8 at 2016-02-26 21:32:16 -0500
+Processing by StaticPagesController#home as HTML
+  Rendered static_pages/home.html.erb within layouts/application (0.9ms)
+  [1m[36mUser Load (0.5ms)[0m  [1mSELECT  "users".* FROM "users" WHERE "users"."id" IS NULL LIMIT 1[0m
+  Rendered layouts/_header.html.erb (2.7ms)
+  Rendered layouts/_footer.html.erb (0.4ms)
+Completed 200 OK in 208ms (Views: 205.6ms | ActiveRecord: 0.5ms)
+
+
+Started GET "/login" for 152.7.224.8 at 2016-02-26 21:32:21 -0500
+Processing by SessionsController#new as HTML
+  Rendered sessions/new.html.erb within layouts/application (3.4ms)
+  [1m[35mUser Load (0.4ms)[0m  SELECT  "users".* FROM "users" WHERE "users"."id" IS NULL LIMIT 1
+  Rendered layouts/_header.html.erb (2.4ms)
+  Rendered layouts/_footer.html.erb (0.4ms)
+Completed 200 OK in 211ms (Views: 209.0ms | ActiveRecord: 0.4ms)
+
+
+Started POST "/login" for 152.7.224.2 at 2016-02-26 21:32:22 -0500
+Processing by SessionsController#create as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"DnfDAeyaQkNjun48e/o3saHX/+WHDgX8Ubi8caKoyBqg+Fk3+J2/vzyHwaQG1M5ChQrbQmLu69vZ0TlxisYfWw==", "session"=>{"email"=>"admin@example.com", "password"=>"[FILTERED]"}, "commit"=>"Log in"}
+  [1m[36mUser Load (0.3ms)[0m  [1mSELECT  "users".* FROM "users" WHERE "users"."email" = ? LIMIT 1[0m  [["email", "admin@example.com"]]
+Redirected to http://98.26.8.120:434/users/5
+Completed 302 Found in 160ms (ActiveRecord: 0.3ms)
+
+
+Started GET "/users/5" for 152.7.224.2 at 2016-02-26 21:32:22 -0500
+Processing by UsersController#show as HTML
+  Parameters: {"id"=>"5"}
+  [1m[35mUser Load (0.5ms)[0m  SELECT  "users".* FROM "users" WHERE "users"."id" = ? LIMIT 1  [["id", 5]]
+  [1m[36mCACHE (0.1ms)[0m  [1mSELECT  "users".* FROM "users" WHERE "users"."id" = ? LIMIT 1[0m  [["id", "5"]]
+  Rendered users/show.html.erb within layouts/application (4.3ms)
+  [1m[35mUser Load (0.2ms)[0m  SELECT  "users".* FROM "users" WHERE "users"."id" = ? LIMIT 1  [["id", 5]]
+  Rendered layouts/_header.html.erb (5.2ms)
+  Rendered layouts/_footer.html.erb (0.5ms)
+Completed 200 OK in 214ms (Views: 207.5ms | ActiveRecord: 0.8ms)
+
+
+Started POST "/login" for 152.7.224.8 at 2016-02-26 21:32:26 -0500
+Processing by SessionsController#create as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"/8/hthdCCkOJEuqDe9PaLAGE0QpHQpHIjrMR6wGjsllfYRghPApQOIr250pvcq7KKWLT5xn3r9ciOsxkIJ7r0A==", "session"=>{"email"=>"admin@example.com", "password"=>"[FILTERED]"}, "commit"=>"Log in"}
+  [1m[36mUser Load (0.3ms)[0m  [1mSELECT  "users".* FROM "users" WHERE "users"."email" = ? LIMIT 1[0m  [["email", "admin@example.com"]]
+Redirected to http://98.26.8.120:434/users/5
+Completed 302 Found in 163ms (ActiveRecord: 0.3ms)
+
+
+Started GET "/users/5" for 152.7.224.8 at 2016-02-26 21:32:26 -0500
+Processing by UsersController#show as HTML
+  Parameters: {"id"=>"5"}
+  [1m[35mUser Load (0.4ms)[0m  SELECT  "users".* FROM "users" WHERE "users"."id" = ? LIMIT 1  [["id", 5]]
+  [1m[36mCACHE (0.1ms)[0m  [1mSELECT  "users".* FROM "users" WHERE "users"."id" = ? LIMIT 1[0m  [["id", "5"]]
+  Rendered users/show.html.erb within layouts/application (0.5ms)
+  [1m[35mUser Load (0.2ms)[0m  SELECT  "users".* FROM "users" WHERE "users"."id" = ? LIMIT 1  [["id", 5]]
+  Rendered layouts/_header.html.erb (4.5ms)
+  Rendered layouts/_footer.html.erb (0.4ms)
+Completed 200 OK in 216ms (Views: 210.4ms | ActiveRecord: 0.7ms)
+
+
+Started GET "/users/new?type=Admin" for 152.7.224.8 at 2016-02-26 21:32:31 -0500
+Processing by UsersController#new as HTML
+  Parameters: {"type"=>"Admin"}
+  Rendered users/_form.html.erb (18.4ms)
+  Rendered users/new.html.erb within layouts/application (24.0ms)
+  [1m[36mUser Load (0.2ms)[0m  [1mSELECT  "users".* FROM "users" WHERE "users"."id" = ? LIMIT 1[0m  [["id", 5]]
+  Rendered layouts/_header.html.erb (4.2ms)
+  Rendered layouts/_footer.html.erb (0.4ms)
+Completed 200 OK in 232ms (Views: 229.8ms | ActiveRecord: 0.2ms)
+
+
+Started GET "/users/new?type=Instructor" for 152.7.224.8 at 2016-02-26 21:32:38 -0500
+Processing by UsersController#new as HTML
+  Parameters: {"type"=>"Instructor"}
+  Rendered users/_form.html.erb (7.0ms)
+  Rendered users/new.html.erb within layouts/application (10.9ms)
+  [1m[35mUser Load (0.3ms)[0m  SELECT  "users".* FROM "users" WHERE "users"."id" = ? LIMIT 1  [["id", 5]]
+  Rendered layouts/_header.html.erb (6.0ms)
+  Rendered layouts/_footer.html.erb (0.5ms)
+Completed 200 OK in 266ms (Views: 263.7ms | ActiveRecord: 0.3ms)
+
+
+Started GET "/users/new?type=Instructor" for 152.7.224.2 at 2016-02-26 21:32:40 -0500
+Processing by UsersController#new as HTML
+  Parameters: {"type"=>"Instructor"}
+  Rendered users/_form.html.erb (7.0ms)
+  Rendered users/new.html.erb within layouts/application (11.3ms)
+  [1m[36mUser Load (0.2ms)[0m  [1mSELECT  "users".* FROM "users" WHERE "users"."id" = ? LIMIT 1[0m  [["id", 5]]
+  Rendered layouts/_header.html.erb (4.3ms)
+  Rendered layouts/_footer.html.erb (0.4ms)
+Completed 200 OK in 219ms (Views: 216.8ms | ActiveRecord: 0.2ms)
+
+
+Started POST "/users" for 152.7.224.2 at 2016-02-26 21:32:58 -0500
+Processing by UsersController#create as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"5vlk1YCf3TzBqFoEQzEYYoE8xM2WVAHxiHGYWvFIfwJIdv7jlJggwJ6V5Zw+H+GRpeHganO079YAGB1a2SaoQw==", "user"=>{"name"=>"111", "email"=>"111@111", "password"=>"[FILTERED]", "password_confirmation"=>"[FILTERED]", "type"=>"Instructor"}, "commit"=>"Create new account"}
+  [1m[35m (0.2ms)[0m  begin transaction
+  [1m[36mUser Exists (0.3ms)[0m  [1mSELECT  1 AS one FROM "users" WHERE LOWER("users"."email") = LOWER('111@111') LIMIT 1[0m
+  [1m[35m (0.2ms)[0m  rollback transaction
+  Rendered users/_form.html.erb (9.6ms)
+  Rendered users/new.html.erb within layouts/application (13.1ms)
+  [1m[36mUser Load (0.2ms)[0m  [1mSELECT  "users".* FROM "users" WHERE "users"."id" = ? LIMIT 1[0m  [["id", 5]]
+  Rendered layouts/_header.html.erb (3.6ms)
+  Rendered layouts/_footer.html.erb (0.3ms)
+Completed 200 OK in 352ms (Views: 149.1ms | ActiveRecord: 0.9ms)
+
+
+Started POST "/users" for 152.7.224.2 at 2016-02-26 21:33:07 -0500
+Processing by UsersController#create as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"UtdUolVrm7Ie8LjFTHbNqROBWSzLhOMFqgSJTi2ieC38WM6UQWxmTkHNB10xWDRaN1x9iy5kDSIibQxOBcyvbA==", "user"=>{"name"=>"111", "email"=>"111@111.com", "password"=>"[FILTERED]", "password_confirmation"=>"[FILTERED]", "type"=>"Instructor"}, "commit"=>"Create new account"}
+  [1m[35m (0.2ms)[0m  begin transaction
+  [1m[36mUser Exists (0.3ms)[0m  [1mSELECT  1 AS one FROM "users" WHERE LOWER("users"."email") = LOWER('111@111.com') LIMIT 1[0m
+  [1m[35mSQL (1.6ms)[0m  INSERT INTO "users" ("type", "name", "email", "password_digest", "created_at", "updated_at") VALUES (?, ?, ?, ?, ?, ?)  [["type", "Instructor"], ["name", "111"], ["email", "111@111.com"], ["password_digest", "$2a$10$fYsoXLDSikh1Sh.IJ3GaC.3Q/X8L5JvH853YSYcEz2LnKIrkUlRRq"], ["created_at", "2016-02-27 02:33:07.714916"], ["updated_at", "2016-02-27 02:33:07.714916"]]
+  [1m[36m (100.6ms)[0m  [1mcommit transaction[0m
+  [1m[35mUser Load (0.4ms)[0m  SELECT  "users".* FROM "users" WHERE "users"."id" = ? LIMIT 1  [["id", 5]]
+Redirected to http://98.26.8.120:434/users/6
+Completed 302 Found in 275ms (ActiveRecord: 103.1ms)
+
+
+Started GET "/users/6" for 152.7.224.2 at 2016-02-26 21:33:07 -0500
+Processing by UsersController#show as HTML
+  Parameters: {"id"=>"6"}
+  [1m[36mUser Load (0.3ms)[0m  [1mSELECT  "users".* FROM "users" WHERE "users"."id" = ? LIMIT 1[0m  [["id", 6]]
+  [1m[35mCACHE (0.1ms)[0m  SELECT  "users".* FROM "users" WHERE "users"."id" = ? LIMIT 1  [["id", "6"]]
+  [1m[36mEnrollment Load (0.5ms)[0m  [1mSELECT "enrollments".* FROM "enrollments" WHERE "enrollments"."user_id" = ?[0m  [["user_id", 6]]
+  Rendered users/show.html.erb within layouts/application (57.9ms)
+  [1m[35mUser Load (0.2ms)[0m  SELECT  "users".* FROM "users" WHERE "users"."id" = ? LIMIT 1  [["id", 5]]
+  Rendered layouts/_header.html.erb (3.9ms)
+  Rendered layouts/_footer.html.erb (0.4ms)
+Completed 200 OK in 253ms (Views: 246.0ms | ActiveRecord: 1.4ms)
+
+
+Started GET "/courses/new" for 152.7.224.2 at 2016-02-26 21:33:18 -0500
+Processing by CoursesController#new as HTML
+  [1m[36mEnrollment Load (0.4ms)[0m  [1mSELECT "enrollments".* FROM "enrollments" WHERE (course_id = NULL)[0m
+  [1m[35mUser Load (0.5ms)[0m  SELECT "users".* FROM "users" WHERE (type = 'Instructor')
+  Rendered courses/_form.html.erb (42.9ms)
+  Rendered courses/new.html.erb within layouts/application (49.9ms)
+  [1m[36mUser Load (0.2ms)[0m  [1mSELECT  "users".* FROM "users" WHERE "users"."id" = ? LIMIT 1[0m  [["id", 5]]
+  Rendered layouts/_header.html.erb (3.5ms)
+  Rendered layouts/_footer.html.erb (0.3ms)
+Completed 200 OK in 257ms (Views: 219.1ms | ActiveRecord: 2.0ms)
