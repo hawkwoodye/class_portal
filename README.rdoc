@@ -18,6 +18,8 @@ Instructor|| instructor@example.com   || password
 Student   || studentone@ncsu.edu      || password
 -----------------------------------------------
 
+While signing up for student, please fill the space type as "Student".
+
 * Database creation:
 
  - User
