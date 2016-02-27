@@ -1,0 +1,43 @@
+           Prefix Verb   URI Pattern                     Controller#Action
+        materials GET    /materials(.:format)            materials#index
+                  POST   /materials(.:format)            materials#create
+     new_material GET    /materials/new(.:format)        materials#new
+    edit_material GET    /materials/:id/edit(.:format)   materials#edit
+         material GET    /materials/:id(.:format)        materials#show
+                  PATCH  /materials/:id(.:format)        materials#update
+                  PUT    /materials/:id(.:format)        materials#update
+                  DELETE /materials/:id(.:format)        materials#destroy
+      enrollments GET    /enrollments(.:format)          enrollments#index
+                  POST   /enrollments(.:format)          enrollments#create
+   new_enrollment GET    /enrollments/new(.:format)      enrollments#new
+  edit_enrollment GET    /enrollments/:id/edit(.:format) enrollments#edit
+       enrollment GET    /enrollments/:id(.:format)      enrollments#show
+                  PATCH  /enrollments/:id(.:format)      enrollments#update
+                  PUT    /enrollments/:id(.:format)      enrollments#update
+                  DELETE /enrollments/:id(.:format)      enrollments#destroy
+          courses GET    /courses(.:format)              courses#index
+                  POST   /courses(.:format)              courses#create
+       new_course GET    /courses/new(.:format)          courses#new
+      edit_course GET    /courses/:id/edit(.:format)     courses#edit
+           course GET    /courses/:id(.:format)          courses#show
+                  PATCH  /courses/:id(.:format)          courses#update
+                  PUT    /courses/:id(.:format)          courses#update
+                  DELETE /courses/:id(.:format)          courses#destroy
+            login GET    /login(.:format)                sessions#new
+                  POST   /login(.:format)                sessions#create
+           logout DELETE /logout(.:format)               sessions#destroy
+           signup GET    /signup(.:format)               users#new
+            users GET    /users(.:format)                users#index
+                  POST   /users(.:format)                users#create
+         new_user GET    /users/new(.:format)            users#new
+        edit_user GET    /users/:id/edit(.:format)       users#edit
+             user GET    /users/:id(.:format)            users#show
+                  PATCH  /users/:id(.:format)            users#update
+                  PUT    /users/:id(.:format)            users#update
+                  DELETE /users/:id(.:format)            users#destroy
+static_pages_home GET    /static_pages/home(.:format)    static_pages#home
+static_pages_help GET    /static_pages/help(.:format)    static_pages#help
+             root GET    /                               static_pages#home
+             help GET    /help(.:format)                 static_pages#help
+            about GET    /about(.:format)                static_pages#about
+          contact GET    /contact(.:format)              static_pages#contact
