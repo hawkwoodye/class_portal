@@ -3758,3 +3758,37 @@ ActionController::InvalidAuthenticityToken (ActionController::InvalidAuthenticit
   /home/yjin6/.rbenv/versions/2.2.3/lib/ruby/2.2.0/webrick/server.rb:294:in `block in start_thread'
 
 
+[2016-02-26 19:51:41] FATAL SignalException: SIGTERM
+	/home/yjin6/.rbenv/versions/2.2.3/lib/ruby/2.2.0/webrick/server.rb:174:in `select'
+	/home/yjin6/.rbenv/versions/2.2.3/lib/ruby/2.2.0/webrick/server.rb:174:in `block in start'
+	/home/yjin6/.rbenv/versions/2.2.3/lib/ruby/2.2.0/webrick/server.rb:32:in `start'
+	/home/yjin6/.rbenv/versions/2.2.3/lib/ruby/2.2.0/webrick/server.rb:162:in `start'
+	/home/yjin6/.rvm/gems/ruby-2.2.1/gems/rack-1.6.4/lib/rack/handler/webrick.rb:34:in `run'
+	/home/yjin6/.rvm/gems/ruby-2.2.1/gems/rack-1.6.4/lib/rack/server.rb:286:in `start'
+	/home/yjin6/.rvm/gems/ruby-2.2.1/gems/railties-4.2.4/lib/rails/commands/server.rb:80:in `start'
+	/home/yjin6/.rvm/gems/ruby-2.2.1/gems/railties-4.2.4/lib/rails/commands/commands_tasks.rb:80:in `block in server'
+	/home/yjin6/.rvm/gems/ruby-2.2.1/gems/railties-4.2.4/lib/rails/commands/commands_tasks.rb:75:in `tap'
+	/home/yjin6/.rvm/gems/ruby-2.2.1/gems/railties-4.2.4/lib/rails/commands/commands_tasks.rb:75:in `server'
+	/home/yjin6/.rvm/gems/ruby-2.2.1/gems/railties-4.2.4/lib/rails/commands/commands_tasks.rb:39:in `run_command!'
+	/home/yjin6/.rvm/gems/ruby-2.2.1/gems/railties-4.2.4/lib/rails/commands.rb:17:in `<top (required)>'
+	/home/yjin6/campus/517/class_portal/bin/rails:9:in `require'
+	/home/yjin6/campus/517/class_portal/bin/rails:9:in `<top (required)>'
+	/home/yjin6/.rvm/gems/ruby-2.2.1/gems/spring-1.6.3/lib/spring/client/rails.rb:28:in `load'
+	/home/yjin6/.rvm/gems/ruby-2.2.1/gems/spring-1.6.3/lib/spring/client/rails.rb:28:in `call'
+	/home/yjin6/.rvm/gems/ruby-2.2.1/gems/spring-1.6.3/lib/spring/client/command.rb:7:in `call'
+	/home/yjin6/.rvm/gems/ruby-2.2.1/gems/spring-1.6.3/lib/spring/client.rb:28:in `run'
+	/home/yjin6/.rvm/gems/ruby-2.2.1/gems/spring-1.6.3/bin/spring:49:in `<top (required)>'
+	/home/yjin6/.rvm/gems/ruby-2.2.1/gems/spring-1.6.3/lib/spring/binstub.rb:11:in `load'
+	/home/yjin6/.rvm/gems/ruby-2.2.1/gems/spring-1.6.3/lib/spring/binstub.rb:11:in `<top (required)>'
+	/home/yjin6/.rbenv/versions/2.2.3/lib/ruby/2.2.0/rubygems/core_ext/kernel_require.rb:54:in `require'
+	/home/yjin6/.rbenv/versions/2.2.3/lib/ruby/2.2.0/rubygems/core_ext/kernel_require.rb:54:in `require'
+	/home/yjin6/campus/517/class_portal/bin/spring:13:in `<top (required)>'
+	bin/rails:3:in `load'
+	bin/rails:3:in `<main>'
+[2016-02-26 19:51:41] INFO  going to shutdown ...
+[2016-02-26 19:51:41] INFO  WEBrick::HTTPServer#start done.
+  Rendered /home/yjin6/.rvm/gems/ruby-2.2.1/gems/actionpack-4.2.4/lib/action_dispatch/middleware/templates/rescues/_source.erb (27.3ms)
+  Rendered /home/yjin6/.rvm/gems/ruby-2.2.1/gems/actionpack-4.2.4/lib/action_dispatch/middleware/templates/rescues/_trace.html.erb (10.6ms)
+  Rendered /home/yjin6/.rvm/gems/ruby-2.2.1/gems/actionpack-4.2.4/lib/action_dispatch/middleware/templates/rescues/_request_and_response.html.erb (3.3ms)
+  Rendered /home/yjin6/.rvm/gems/ruby-2.2.1/gems/actionpack-4.2.4/lib/action_dispatch/middleware/templates/rescues/diagnostics.html.erb within rescues/layout (89.3ms)
+Exiting
