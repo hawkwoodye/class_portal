@@ -3792,3 +3792,49 @@ ActionController::InvalidAuthenticityToken (ActionController::InvalidAuthenticit
   Rendered /home/yjin6/.rvm/gems/ruby-2.2.1/gems/actionpack-4.2.4/lib/action_dispatch/middleware/templates/rescues/_request_and_response.html.erb (3.3ms)
   Rendered /home/yjin6/.rvm/gems/ruby-2.2.1/gems/actionpack-4.2.4/lib/action_dispatch/middleware/templates/rescues/diagnostics.html.erb within rescues/layout (89.3ms)
 Exiting
+Ignoring json-1.8.3 because its extensions are not built.  Try: gem pristine json --version 1.8.3
+Ignoring nokogiri-1.6.6.2 because its extensions are not built.  Try: gem pristine nokogiri --version 1.6.6.2
+Ignoring nokogiri-1.6.7.2 because its extensions are not built.  Try: gem pristine nokogiri --version 1.6.7.2
+Ignoring RedCloth-4.2.9 because its extensions are not built.  Try: gem pristine RedCloth --version 4.2.9
+Ignoring algorithms-0.6.1 because its extensions are not built.  Try: gem pristine algorithms --version 0.6.1
+Ignoring bcrypt-3.1.10 because its extensions are not built.  Try: gem pristine bcrypt --version 3.1.10
+Ignoring bcrypt-3.1.7 because its extensions are not built.  Try: gem pristine bcrypt --version 3.1.7
+Ignoring binding_of_caller-0.7.3.pre1 because its extensions are not built.  Try: gem pristine binding_of_caller --version 0.7.3.pre1
+Ignoring binding_of_caller-0.7.2 because its extensions are not built.  Try: gem pristine binding_of_caller --version 0.7.2
+=> Booting WEBrick
+=> Rails 4.2.2 application starting in development on http://192.168.1.141:3000
+=> Run `rails server -h` for more startup options
+=> Ctrl-C to shutdown server
+[2016-02-26 20:37:35] INFO  WEBrick 1.3.1
+[2016-02-26 20:37:35] INFO  ruby 2.2.1 (2015-02-26) [x86_64-linux]
+[2016-02-26 20:37:35] INFO  WEBrick::HTTPServer#start: pid=2466 port=3000
+[2016-02-26 20:37:42] FATAL SignalException: SIGTERM
+	/home/yjin6/.rvm/rubies/ruby-2.2.1/lib/ruby/2.2.0/webrick/server.rb:174:in `select'
+	/home/yjin6/.rvm/rubies/ruby-2.2.1/lib/ruby/2.2.0/webrick/server.rb:174:in `block in start'
+	/home/yjin6/.rvm/rubies/ruby-2.2.1/lib/ruby/2.2.0/webrick/server.rb:32:in `start'
+	/home/yjin6/.rvm/rubies/ruby-2.2.1/lib/ruby/2.2.0/webrick/server.rb:162:in `start'
+	/home/yjin6/.rvm/gems/ruby-2.2.1/gems/rack-1.6.4/lib/rack/handler/webrick.rb:34:in `run'
+	/home/yjin6/.rvm/gems/ruby-2.2.1/gems/rack-1.6.4/lib/rack/server.rb:286:in `start'
+	/home/yjin6/.rvm/gems/ruby-2.2.1/gems/railties-4.2.2/lib/rails/commands/server.rb:80:in `start'
+	/home/yjin6/.rvm/gems/ruby-2.2.1/gems/railties-4.2.2/lib/rails/commands/commands_tasks.rb:80:in `block in server'
+	/home/yjin6/.rvm/gems/ruby-2.2.1/gems/railties-4.2.2/lib/rails/commands/commands_tasks.rb:75:in `tap'
+	/home/yjin6/.rvm/gems/ruby-2.2.1/gems/railties-4.2.2/lib/rails/commands/commands_tasks.rb:75:in `server'
+	/home/yjin6/.rvm/gems/ruby-2.2.1/gems/railties-4.2.2/lib/rails/commands/commands_tasks.rb:39:in `run_command!'
+	/home/yjin6/.rvm/gems/ruby-2.2.1/gems/railties-4.2.2/lib/rails/commands.rb:17:in `<top (required)>'
+	/home/yjin6/campus/517/class_portal/bin/rails:9:in `require'
+	/home/yjin6/campus/517/class_portal/bin/rails:9:in `<top (required)>'
+	/home/yjin6/.rvm/gems/ruby-2.2.1/gems/spring-1.1.3/lib/spring/client/rails.rb:27:in `load'
+	/home/yjin6/.rvm/gems/ruby-2.2.1/gems/spring-1.1.3/lib/spring/client/rails.rb:27:in `call'
+	/home/yjin6/.rvm/gems/ruby-2.2.1/gems/spring-1.1.3/lib/spring/client/command.rb:7:in `call'
+	/home/yjin6/.rvm/gems/ruby-2.2.1/gems/spring-1.1.3/lib/spring/client.rb:26:in `run'
+	/home/yjin6/.rvm/gems/ruby-2.2.1/gems/spring-1.1.3/bin/spring:48:in `<top (required)>'
+	/home/yjin6/.rvm/gems/ruby-2.2.1/gems/spring-1.1.3/lib/spring/binstub.rb:11:in `load'
+	/home/yjin6/.rvm/gems/ruby-2.2.1/gems/spring-1.1.3/lib/spring/binstub.rb:11:in `<top (required)>'
+	/home/yjin6/.rvm/rubies/ruby-2.2.1/lib/ruby/site_ruby/2.2.0/rubygems/core_ext/kernel_require.rb:54:in `require'
+	/home/yjin6/.rvm/rubies/ruby-2.2.1/lib/ruby/site_ruby/2.2.0/rubygems/core_ext/kernel_require.rb:54:in `require'
+	/home/yjin6/campus/517/class_portal/bin/spring:13:in `<top (required)>'
+	bin/rails:3:in `load'
+	bin/rails:3:in `<main>'
+[2016-02-26 20:37:42] INFO  going to shutdown ...
+[2016-02-26 20:37:42] INFO  WEBrick::HTTPServer#start done.
+Exiting
